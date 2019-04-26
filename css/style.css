@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|ZCOOL+KuaiLe');
+
 /*
 Style
 */
+:root{
+--primary:#91777e;
+--secundary:#fff5f7;
+--complement: #ce7825;
+--shadow:#AB8891;
+}
 
 @font-face {
 	font-family: 'tommasoregular';
@@ -23,24 +31,26 @@ Style
 	font-weight: normal;
 	font-style: normal;
 }
+
 /**selection text**/
 ::selection {
-	background: #F96E5B;
+	background: var(--primary);
 	color: #fff;
 }
 
 ::-moz-selection {
- background: #F96E5B;
+ background: var(--primary);
  color: #fff;
 }
 
 ::-webkit-selection {
- background: #F96E5B;
+ background: var(--primary);
  color: #fff;
 }
 /**text**/
 body {
-	font-family: "SourceSansProRegular";
+	font-family: 'ZCOOL KuaiLe', cursive;
+	background-color: #d6d6d6;
 }
 body a {
 	-webkit-transition: color 0.3s ease;
@@ -61,7 +71,7 @@ body a {
 	bottom: -1px;
 }
 .page-head:before {
-	background: none repeat scroll 0 0 #F96E5B;
+	background: none repeat scroll 0 0 var(--primary);
 	content: "";
 	display: block;
 	height: 2px;
@@ -70,14 +80,14 @@ body a {
 	width: 185px;
 }
 .page-head {
-	border-bottom: 1px solid #DEDEDE;
+	border-bottom: 1px solid var(--secundary);
 }
 .page-head {
 	padding: 5px 25px 5px 0;
 	position: relative;
 }
 .page-head small {
-	color: #F96E5B;
+	color: var(--primary);
 }
 h1, h2, h3 {
 	font-family: 'tommasoregular';
@@ -105,29 +115,29 @@ p {
 	padding-right: 0;
 }
 .welcome {
-	background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;
+	/*background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;*/
 }
 .About {
-	background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;
+	/*background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;*/
 	color: #575757;
 	overflow: hidden;
 	padding: 85px 0 100px;
 	z-index: -1;
 }
 .Services {
-	background: url(../images/bgnoise.jpg) 50% 0 repeat fixed #ffffff;
+	/*background: url(../images/bgnoise.jpg) 50% 0 repeat fixed #ffffff;*/
 	color: #575757;
 	padding: 85px 0 100px;
 	z-index: 2;
 }
 .Portfolio {
-	background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;
+	/*background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;*/
 	color: #575757;
 	padding: 85px 0 100px;
 	z-index: 2;
 }
 .LargeSlider {
-	background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;
+	/*background: url(../images/bgnoise.jpg) 50% 0 repeat fixed;*/
 	color: #575757;
 	padding: 85px 0 100px;
 	z-index: 2;
@@ -145,14 +155,14 @@ p {
 	color: #fff;
 }
 .Contact .well {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(206, 120, 37, 0.5);
 	box-shadow: none;
 }
 .Contact .well ul li {
 	margin-bottom: 10px;
 }
 .GetInTouch {
-	background-color: rgba(249, 110, 91, 0.5)!important;
+	background-color: rgba(206, 120, 37, 0.5)!important;
 }
 .form-horizontal .control-label {
 	color: #FFFFFF;
@@ -258,7 +268,7 @@ ul.Social li a:hover {
 	width: 100%;
 }
 .overlay {
-	background: none repeat scroll 0 0 #F96E5B;
+	background: none repeat scroll 0 0 var(--primary);
 }
 .overlay-content.social-icons {
 	margin: 0 auto;
@@ -297,13 +307,13 @@ li [class^="icon-"], li [class*=" icon-"] {
 	font-size: 1em!important;
 }
 .Team {
-	border-bottom: 3px solid #F96E5B;
+	border-bottom: 3px solid var(--primary);
 	margin: 10px 5%;
 	padding: 10px;
 	text-align: left;
 }
 .Team h2 {
-	color: #F96E5B;
+	color: var(--primary);
 	margin-bottom: -6px;
 }
 .Team h3 {
@@ -367,10 +377,10 @@ li [class^="icon-"], li [class*=" icon-"] {
 	box-shadow: 1px 1px 3px #ddd;
 }
 .sti-menu li a:hover {
-	background: #F96E5B;
-	-moz-box-shadow: inset 1px 1px 70px #EA6A57;
-	-webkit-box-shadow: inset 1px 1px 70px #EA6A57;
-	box-shadow: inset 1px 1px 70px #EA6A57;
+	background: var(--primary);
+	-moz-box-shadow: inset 1px 1px 70px var(--shadow);
+	-webkit-box-shadow: inset 1px 1px 70px var(--shadow);
+	box-shadow: inset 1px 1px 70px var(--shadow);
 	color: #FFF!important;
 }
 .sti-menu li a h2 {
@@ -452,13 +462,13 @@ li [class^="icon-"], li [class*=" icon-"] {
 	padding: 10px 15px;
 }
 .PricingTables ul li:hover {
-	border-bottom: 1px solid #F96E5B;
+	border-bottom: 1px solid var(--primary);
 }
 .PricingTables i {
 	margin: 0 5px 0 0;
 }
 .PricingTables h2 {
-	background: none repeat scroll 0 0 #F96E5B;
+	background: none repeat scroll 0 0 var(--primary);
 	border-bottom: 1px dashed #FFFFFF;
 	color: #FFFFFF;
 	margin: 0;
@@ -466,20 +476,20 @@ li [class^="icon-"], li [class*=" icon-"] {
 	text-align: center;
 }
 .PricingTables h3 {
-	background: none repeat scroll 0 0 #FB7566;
+	background: none repeat scroll 0 0 var(--shadow);
 	border-bottom: 1px dashed #FFFFFF;
 	color: #FFFFFF;
 	margin: 0;
 	text-align: center;
 }
 a.btn, button.btn {
-	background: #F96E5B;
+	background: var(--primary);
 	margin: 25px 0;
 	color: #FFF;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 a.btn:hover, button.btn:hover {
-	background: #FC7263;
+	background: var(--primary);
 	color: #FFF;
 }
 .Standard:hover {
@@ -633,9 +643,9 @@ a.btn:hover, button.btn:hover {
 }
 /***Bootstrap Override Sub Menu ***/
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-	background-color: #F96E5B;
+	background-color: var(--primary);
 	color: #FFFFFF;
-	text-shadow: 1px 1px 0 #C9453B !important;
+	text-shadow: 1px 1px 0 var(--complement) !important;
 }
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
 	background-color: transparent;
@@ -650,17 +660,17 @@ a.btn:hover, button.btn:hover {
 .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
 	text-decoration: none;
 	color: #ffffff;
-	background: #F96E5B;
-	background-image: #F96E5B;
-	text-shadow: 1px 1px 0 #C9453B !important;
+	background: var(--primary);
+	/*background-image: #F96E5B;*/
+	text-shadow: 1px 1px 0 var(--complement)!important;
 }
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
 	color: #ffffff;
 	text-decoration: none;
 	outline: 0;
-	background: #F96E5B;
-	background-image: #F96E5B;
-	text-shadow: 1px 1px 0 #C9453B !important;
+	background: var(--primary);
+	/*background-image: #F96E5B;*/
+	text-shadow: 1px 1px 0 var(--complement) !important;
 }
 .dropdown-menu {
 	-webkit-border-radius: 3px;
@@ -673,4 +683,14 @@ a.btn:hover, button.btn:hover {
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
 	border-top-color: #ffffff;
 	border-bottom-color: #ffffff;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	color: #fff !important;
+	text-decoration: none;
+	/*-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);*/
+	background-color: var(--primary);
+	text-shadow: 1px 1px 0 var(--shadow) !important;
 }
