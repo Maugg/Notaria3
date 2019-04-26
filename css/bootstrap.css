@@ -2875,7 +2875,8 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	min-height: 65px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background: url(../images/debut_dark.png);
+	/*background: url(../images/debut_dark.png);*/
+	background-color: var(--secundary);
 	border: None;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
